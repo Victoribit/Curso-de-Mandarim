@@ -1,0 +1,155 @@
+:root {
+    --bg: #f7f9fc;
+    --card: #fff;
+    --accent: #2b6cb0;
+    --success: #48bb78;
+    --danger: #e53e3e;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    background: var(--bg);
+    margin: 0;
+    padding: 24px;
+    color: #0f172a;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 18px 8px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 6px 18px rgba(12,15,35,0.06);
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 12px;
+}
+
+input[type=text] {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #d3e2f8;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #d3e2f8;
+}
+
+button {
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.muted {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.tone-select {
+    width: 73px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #d3e2f8;
+}
+
+/* Mantém o padding padrão para todos os ol */
+ol {
+    padding-left: 18px;
+}
+
+/* Ajustes específicos para alinhar iniciais/finais e sílabas igual ao tones */
+#initials-list li,
+#syllables-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre placeholder/input/botão */
+}
+
+#initials-list,
+#syllables-list {
+    padding-left: 18px; /* Igual ao ol do tones */
+}
+
+footer {
+    font-size: 13px;
+    color: #475569;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.show-answer-btn {
+    background: var(--success);
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+.answer-display {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #2d3748;
+    display: none;
+}
+
+@media (max-width:720px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.clear-btn {
+    background: var(--danger);
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  

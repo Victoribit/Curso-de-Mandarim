@@ -1,0 +1,15 @@
+/* Estilos específicos para a seção Write the syllables you hear */
+#syllables-block input {
+    margin: 5px 0;
+  }
+
+  #syllables-list {
+    padding-left: 18px; /* mesmo padding da lista de tons */
+}
+
+#syllables-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espaço entre placeholder/input/botão, opcional */
+}

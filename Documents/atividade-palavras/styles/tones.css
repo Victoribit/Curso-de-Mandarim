@@ -1,0 +1,41 @@
+/* Estilos específicos para a seção Mark the tones you hear */
+#tones-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .tone-select {
+    margin: 0 5px;
+  }
+  
+  .audio-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .audio-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .audio-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .audio-btn:hover {
+    background: #2c5282;
+  }
